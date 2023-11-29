@@ -1,13 +1,14 @@
 <script></script>
 <template>
-    <div>
+    <section class="comingSoon">
         <h2>Coming Soon...</h2>
-    </div>
+    </section>
 </template>
 <style scoped>
-div {
+.comingSoon {
+    height: 6rem;
     background-color: rgb(32, 32, 32);
     color: white;
-    padding: 1rem 10%;
+    padding: 3rem 10%;
 }
 </style>
