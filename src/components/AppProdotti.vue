@@ -1,7 +1,7 @@
 <script>
 
 export default {
-    name: "AppHeader",
+    name: "AppProdotti",
     data() {
         return {
             products: [
@@ -29,7 +29,7 @@ export default {
         }
     },
     mounted() {
-        console.log("Componente AppHeader caricato");
+        console.log("Componente AppProdotti caricato");
     }
 }
 </script>
