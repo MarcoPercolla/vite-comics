@@ -66,6 +66,7 @@ export default {
 </template>
 <style scoped>
 header {
+    padding: 1rem 10%;
     display: flex;
     align-items: center;
 }

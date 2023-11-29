@@ -15,23 +15,19 @@ export default {
 </script>
 <template>
 	<!-- logo e v-for link -->
-	<div class="container">
-		<AppHeader />
 
-		<main>
+	<AppHeader />
 
-			<AppComingSoon />
+	<main>
 
-			<!-- sezione (v-for ) con tipologie prodotti e icone -->
-			<AppProdotti />
-		</main>
-		<!-- due fasce di cui una con background image -->
-		<AppFooter />
-	</div>
+		<AppComingSoon />
+
+		<!-- sezione (v-for ) con tipologie prodotti e icone -->
+		<AppProdotti />
+
+	</main>
+	<!-- due fasce di cui una con background image -->
+	<AppFooter />
 </template>
-<style scoped>
-.container {
 
-	padding: 0 10%;
-}
-</style>
+<style scoped></style>
