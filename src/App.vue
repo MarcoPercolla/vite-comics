@@ -1,30 +1,37 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import AppHeader from './components/AppHeader.vue'
+import AppComingSoon from './components/AppComingSoon.vue'
+import AppProdotti from './components/AppProdotti.vue'
+import AppFooter from './components/AppFooter.vue'
+
+export default {
+	components: {
+		AppHeader,
+		AppComingSoon,
+		AppProdotti,
+		AppFooter,
+	}
+}
 </script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+	<!-- logo e v-for link -->
+	<div class="container">
+		<AppHeader />
 
+		<main>
+
+			<AppComingSoon />
+
+			<!-- sezione (v-for ) con tipologie prodotti e icone -->
+			<AppProdotti />
+		</main>
+		<!-- due fasce di cui una con background image -->
+		<AppFooter />
+	</div>
+</template>
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.container {
+	width: 80%;
+	margin: 0 auto;
 }
 </style>
