@@ -31,7 +31,7 @@ export default {
 </template>
 <style scoped>
 .container {
-	width: 80%;
-	margin: 0 auto;
+
+	padding: 0 10%;
 }
 </style>
