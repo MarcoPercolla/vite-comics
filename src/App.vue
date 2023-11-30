@@ -5,12 +5,16 @@ import AppProdotti from './components/AppProdotti.vue'
 import AppFooter from './components/AppFooter.vue'
 import AppCardDisplay from './components/AppCardDisplay.vue'
 
+
+
 export default {
 	components: {
 		AppHeader,
 		AppJumbo,
 		AppProdotti,
 		AppFooter,
+		AppCardDisplay,
+
 	},
 	data() {
 		return {
@@ -102,7 +106,7 @@ export default {
 	<main>
 
 		<AppJumbo />
-		<AppCardDisplay :Series="comicsSeries" />
+		<AppCardDisplay :catalog="comicsSeries" />
 
 		<!-- sezione (v-for ) con tipologie prodotti e icone -->
 		<AppProdotti />
