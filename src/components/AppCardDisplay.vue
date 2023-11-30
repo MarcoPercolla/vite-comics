@@ -15,4 +15,12 @@ export default {
 
     </div>
 </template>
-<style></style>
+<style scoped>
+.cardsContainer {
+    background-color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4rem 10%;
+}
+</style>
