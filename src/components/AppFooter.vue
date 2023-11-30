@@ -61,6 +61,18 @@ export default {
 
         <div class="bgLogo"> </div>
     </div>
+    <div class="footerEnd">
+        <a class="signBtn" href="#">SIGN-UP NOW!</a>
+        <div class="footerSocials">
+            <h4>FOLLOW US</h4>
+            <img src="../../img/footer-facebook.png" alt="">
+            <img src="../../img/footer-periscope.png" alt="">
+            <img src="../../img/footer-pinterest.png" alt="">
+            <img src="../../img/footer-twitter.png" alt="">
+            <img src="../../img/footer-youtube.png" alt="">
+        </div>
+
+    </div>
 </template>
 
 
@@ -71,6 +83,33 @@ export default {
     height: 20rem;
     background-image: url("../../img/footer-bg.jpg");
     background-size: cover;
+}
+
+.footerEnd {
+    height: 6rem;
+    background-color: #333;
+    padding: 0.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSocials {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.signBtn {
+    border: solid 1px rgb(0, 64, 255);
+
+    padding: 0.5rem 1rem;
+}
+
+h4 {
+    color: rgb(0, 81, 255);
 }
 
 .footerLinks {
